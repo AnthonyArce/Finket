@@ -1,14 +1,16 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import DropZone from "../../components/Dropzone";
+import { Container,Row,Col } from "react-bootstrap";
 import "./style.css"
 
 const CargaPadron = () => (
     <>
         <Container>
-            <row>
-                <div className="body">hola perro que onda
-                </div>
-            </row>
+            <Row>
+                <Col className="m-5">
+                    <DropZone/>
+                </Col>                    
+            </Row>
         </Container>
     </>
 );

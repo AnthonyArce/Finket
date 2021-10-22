@@ -1,23 +1,21 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
+import routes from './routers';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  useRouteMatch
 } from "react-router-dom";
-import routes from './routers';
-
-
-
 
 function App() {
+
+
   return (
-    <Router>
-      <Header name="FINTECH"/>
+    <Router basename="/Fintek/">
+      <Header name="FINTEK"/>
         <Switch>
          {routes.map(route => (
-
            <Route
               key={route.path}
               path={route.path}
